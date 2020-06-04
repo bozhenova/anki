@@ -7,7 +7,7 @@ export default class LoaderView extends AbstractView {
 
   get template() {
     return `<div class="loader">
-          <p class="loader__text">Loading data...</p>
+          <p class="loader__text">Loading data</p>
           <div class="loader__icon"></div>
           </div>`;
   }
