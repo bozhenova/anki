@@ -1,0 +1,100 @@
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.modal__inner {
+  position: relative;
+  width: 450px;
+  padding: 50px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #000000;
+  border-radius: 10px;
+  background: $bg-color linear-gradient(to bottom right, #ccdeeb, $bg-color)
+    no-repeat;
+
+  animation: bounce 0.6s;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 35px;
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+
+  &--error {
+    margin-bottom: 0;
+  }
+}
+
+.modal__close {
+  padding: 0;
+
+  position: absolute;
+  top: -40px;
+  right: -40px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  background-image: url('../img/icon-cross.svg');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.modal__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modal__button {
+  &:hover {
+    background-color: $danger-color;
+    color: #ffffff;
+  }
+  &:first-of-type {
+    margin-right: 15px;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
