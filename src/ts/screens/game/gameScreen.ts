@@ -1,6 +1,6 @@
 import GameView from './gameView';
 import Application from '../../application';
-import { GAME_SETTINGS, Data, State } from '../../data/data';
+import { Data, State } from '../../data/data';
 import { GameModel } from '../../gameModel';
 
 export default class GameScreen {

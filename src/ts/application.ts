@@ -4,7 +4,6 @@ import GameScreen from './screens/game/gameScreen';
 import ModalScreen from './screens/modal/modalScreen';
 import LoaderScreen from './screens/loader/loaderScreen';
 import ErrorScreen from './screens/error/errorScreen';
-import { Data } from './data/data';
 import Loader from './loader';
 import { GameModel } from './gameModel';
 

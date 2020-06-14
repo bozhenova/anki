@@ -1,9 +1,7 @@
 {
-  "files": [
-    "src/ts/main.ts"
-  ],
+  "files": ["src/ts/main.ts"],
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "docs",
     "allowJs": true,
     "target": "es6",
     "removeComments": true,
@@ -13,10 +11,6 @@
     "module": "commonjs",
     "strictNullChecks": false
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

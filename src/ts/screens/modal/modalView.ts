@@ -13,7 +13,6 @@ export default class ModalView extends AbstractView {
           </button>
           <h2 class="modal__title">Confirmation</h2>
           <p class="modal__text">Are you sure you want to exit?</p>
-          <p class="modal__text">(your progress will be saved)</p>
           <div class="modal__button-wrapper">
             <button class="modal__button button" data-choice="ok">Ок</button>
             <button class="modal__button button" data-choice="cancel">Cancel</button>

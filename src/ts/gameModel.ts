@@ -1,7 +1,5 @@
-import Answer from './data/answer';
-import { INITIAL_STATE, GAME_SETTINGS, State, Data } from './data/data';
+import { INITIAL_STATE, State } from './data/data';
 import changeQuestion from './utils/changeQuestion';
-import Application from './application';
 import Loader from './loader';
 
 
@@ -21,8 +19,7 @@ export class GameModel {
   }
 
   isLastQuestion(): boolean {
-    return false;
-    // return this.state.question === this.gameData.length - 1;
+    return this.state.question === this.gameData.length - 1;
   }
 
   getNextQuestion(): void {
@@ -32,11 +29,6 @@ export class GameModel {
   restart(): void {
     this.state = { ...INITIAL_STATE };
   }
-
-  // updateScore(condition: boolean): void {
-  //   const answer: Answer = condition ? new Answer(true) : new Answer(false);
-  //   // this.state.answers.push(answer);
-  // }
 
   getCurrentKanji() {
     return this.gameData[this.state.question - 1];

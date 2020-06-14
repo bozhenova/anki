@@ -11,7 +11,10 @@ export default class ModalScreen {
   }
 
   confirm() {
-    this.content.onConfirm = () => Application.showInitScreen();
+    this.content.onConfirm = () => {
+      // localStorage.setItem(key: 'kanji', value: '')
+      Application.showInitScreen();
+    }
   }
 
   cancel() {
